@@ -1,9 +1,15 @@
 import React from 'react';
 
-const List = ({ results }) => {
+const List = ({ events }) => {
   return (
     <div>
-      TODO: List of search results
+      <ul>
+        {events.map((event, idx) =>
+          <li key={idx}>
+            {event.date}, {event.description}
+          </li>
+        )}
+      </ul>
     </div>
   )
 }
