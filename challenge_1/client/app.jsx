@@ -1,10 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Search from './components/Search.jsx';
 
-const App = () => {
-  return (
-    <div>TODO</div>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Search />, document.getElementById('app'));
